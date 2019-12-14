@@ -27,6 +27,7 @@ const Header = props => {
       }
     >
       <button
+        class={props.darkMode ? style.dark : null}
         onClick={() => {
           sidebar ? setSidebar(false) : setSidebar(true);
         }}

@@ -83,7 +83,12 @@
   .experience {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-    height: 200vh;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
   }
 }
 .experience > svg {
