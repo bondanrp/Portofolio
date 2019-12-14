@@ -44,6 +44,16 @@
     padding-top: 80px;
     font-size: 30px;
   }
+  .about > div:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .about > div:nth-of-type(1) > img {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    object-position: 50% 30%;
+  }
 }
 .about > div > g > svg {
   width: 70%;

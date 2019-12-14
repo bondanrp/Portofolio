@@ -83,8 +83,7 @@
   height: 50px;
   font-size: 20px;
 }
-.contactCard > form > input:required {
-}
+
 .contactCard > form > textarea:invalid:focus,
 .contactCard > form > input:invalid:focus {
   border-bottom: 2px solid red;
