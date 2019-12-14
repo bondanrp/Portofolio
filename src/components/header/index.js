@@ -33,17 +33,9 @@ const Header = props => {
       >
         <h1>B R P</h1>
       </button>
+      <div></div>
       <div>
-        <input
-          type="radio"
-          id="home"
-          name="nav"
-          onChange={() => {
-            props.changeSelection(0);
-            setSidebar(true);
-          }}
-        />
-        <label
+        <button
           for="home"
           onMouseOver={() => {
             setNavIcon(1);
@@ -51,19 +43,15 @@ const Header = props => {
           onMouseOut={() => {
             setNavIcon(0);
           }}
-        >
-          {navIcon == 1 ? <p>Home</p> : <FontAwesomeIcon icon={faHome} />}
-        </label>
-        <input
-          type="radio"
-          id="about"
-          name="nav"
-          onChange={() => {
-            props.changeSelection(1);
+          onClick={() => {
+            props.changeSelection(0);
             setSidebar(true);
           }}
-        />
-        <label
+        >
+          {navIcon == 1 ? <p>Home</p> : <FontAwesomeIcon icon={faHome} />}
+        </button>
+
+        <button
           for="about"
           onMouseOver={() => {
             setNavIcon(2);
@@ -71,19 +59,15 @@ const Header = props => {
           onMouseOut={() => {
             setNavIcon(0);
           }}
-        >
-          {navIcon == 2 ? <p>About</p> : <FontAwesomeIcon icon={faUser} />}
-        </label>
-        <input
-          type="radio"
-          id="skills"
-          name="nav"
-          onChange={() => {
-            props.changeSelection(2);
+          onClick={() => {
+            props.changeSelection(1);
             setSidebar(true);
           }}
-        />
-        <label
+        >
+          {navIcon == 2 ? <p>About</p> : <FontAwesomeIcon icon={faUser} />}
+        </button>
+
+        <button
           for="skills"
           onMouseOver={() => {
             setNavIcon(3);
@@ -91,19 +75,15 @@ const Header = props => {
           onMouseOut={() => {
             setNavIcon(0);
           }}
-        >
-          {navIcon == 3 ? <p>Skills</p> : <FontAwesomeIcon icon={faCog} />}
-        </label>
-        <input
-          type="radio"
-          id="experience"
-          name="nav"
-          onChange={() => {
-            props.changeSelection(3);
+          onClick={() => {
+            props.changeSelection(2);
             setSidebar(true);
           }}
-        />
-        <label
+        >
+          {navIcon == 3 ? <p>Skills</p> : <FontAwesomeIcon icon={faCog} />}
+        </button>
+
+        <button
           for="experience"
           onMouseOver={() => {
             setNavIcon(4);
@@ -111,19 +91,15 @@ const Header = props => {
           onMouseOut={() => {
             setNavIcon(0);
           }}
-        >
-          {navIcon == 4 ? <p>Experience</p> : <FontAwesomeIcon icon={faEye} />}
-        </label>
-        <input
-          type="radio"
-          id="contact"
-          name="nav"
-          onChange={() => {
-            props.changeSelection(4);
+          onClick={() => {
+            props.changeSelection(3);
             setSidebar(true);
           }}
-        />
-        <label
+        >
+          {navIcon == 4 ? <p>Experience</p> : <FontAwesomeIcon icon={faEye} />}
+        </button>
+
+        <button
           for="contact"
           onMouseOver={() => {
             setNavIcon(5);
@@ -131,20 +107,24 @@ const Header = props => {
           onMouseOut={() => {
             setNavIcon(0);
           }}
+          onClick={() => {
+            props.changeSelection(4);
+            setSidebar(true);
+          }}
         >
           {navIcon == 5 ? (
             <p>Contact</p>
           ) : (
             <FontAwesomeIcon icon={faEnvelope} />
           )}
-        </label>
+        </button>
       </div>
       <div class={style.switchCon}>
         <span>dark</span>
         <label class={style.switch}>
           <input
             type="checkbox"
-            onChange={() => {
+            onClick={() => {
               props.setDarkMode();
             }}
           />

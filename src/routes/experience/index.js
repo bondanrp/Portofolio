@@ -3,11 +3,15 @@ import style from "./style";
 import undraw from "./undraw.svg";
 import project1 from "./project1.jpg";
 
-const Experience = (props) => {
+const Experience = props => {
   return (
-    <div class={
-        props.darkMode ? [style.experience, style.dark].join(" ") : style.experience
-      }>
+    <div
+      class={
+        props.darkMode
+          ? [style.experience, style.dark].join(" ")
+          : style.experience
+      }
+    >
       <div>
         <div>
           <img src={undraw} alt="404" />
@@ -17,9 +21,9 @@ const Experience = (props) => {
           <h3>I hope you can help me with this</h3>
         </div>
       </div>
-      <div class={
-        props.darkMode ? [style.card, style.gray].join(" ") : style.card
-      }>
+      <div
+        class={props.darkMode ? [style.card, style.gray].join(" ") : style.card}
+      >
         <h1>No Worries!</h1>
         <p>
           Altough it seems that im missing a work experience in the related
@@ -31,21 +35,24 @@ const Experience = (props) => {
           .
         </p>
         <h1>My Project</h1>
+
+        <div class={style.insideText}>
+          <h1>BagiBakat</h1>
+          <p>
+            My first project. A video sharing website for online courses,
+            developed for internal use in Purwadhika for my final project.
+            <br />
+            <br />
+            Developed in React JS + Redux and Express JS + MySQL, this website
+            is capable of uploading videos, subscriber system, notification
+            system, comments, view counting and more!
+          </p>
+        </div>
         <div class={style.project}>
           <a href="https://github.com/bondanrp/jc10-finalproject">
             <img src={project1} alt="project1" />
-            <div class={style.insideText}>
-              <h1>BagiBakat</h1>
-              <p>
-                BagiBakat is my first project. A video sharing website for
-                online courses, developed for internal use in Purwadhika for my
-                final project.
-                <br />
-                <br />
-                Developed in React JS + Redux and Express JS + MySQL, this
-                website is capable of uploading videos, subscriber system,
-                notification system, comments, view counting and more!
-              </p>
+            <div class={style.overlay}>
+              <h1>View on GitHub</h1>
             </div>
           </a>
         </div>

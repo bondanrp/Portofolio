@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
-  /* background: #fafafa; */
+  background: #fafafa;
   position: absolute;
   left: 0;
   font-family: "Helvetica Neue", arial, sans-serif;
@@ -14,7 +14,7 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-/* background: black */
+  /* background: black */
 }
 
 * {
@@ -29,4 +29,7 @@ body {
   body {
     overflow-y: scroll;
   }
+}
+button:focus {
+  outline: none;
 }

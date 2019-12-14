@@ -66,7 +66,7 @@ const Skills = props => {
         </div>
       </div>
       <div>
-        <img src={undraw} alt="image" />
+        <img class={style.images} src={undraw} alt="image" />
       </div>
     </div>
   );

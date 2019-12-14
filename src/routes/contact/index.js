@@ -11,7 +11,7 @@ const mapText = input => {
   return result;
 };
 
-const Contact = (props) => {
+const Contact = props => {
   const [status, setStatus] = useState("");
   const submitForm = ev => {
     ev.preventDefault();
@@ -32,9 +32,11 @@ const Contact = (props) => {
     xhr.send(data);
   };
   return (
-    <div class={
+    <div
+      class={
         props.darkMode ? [style.contact, style.dark].join(" ") : style.contact
-      }>
+      }
+    >
       <div>
         <g>
           <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -48,13 +50,17 @@ const Contact = (props) => {
         </g>
       </div>
       <div></div>
-      <div class={
-        props.darkMode ? [style.contactCard, style.gray].join(" ") : style.contactCard
-      }>
+      <div
+        class={
+          props.darkMode
+            ? [style.contactCard, style.gray].join(" ")
+            : style.contactCard
+        }
+      >
         <h1>{mapText(text)}</h1>
         <p>
-          I am currently looking for full-time work experience. If you have any
-          questions don't hesistate to contact me via the form below.
+          I am currently looking a for full-time work experience. If you have
+          any questions don't hesistate to contact me via the form below.
         </p>
         <form
           onSubmit={() => {
@@ -70,19 +76,29 @@ const Contact = (props) => {
             minLength="3"
             required
             type="text"
-            class={props.darkMode?'light':''}
+            class={props.darkMode ? "light" : ""}
           />
-          <input 
-            class={props.darkMode?'light':''} name="email" type="email" required placeholder="Email" />
-          <input 
-            class={props.darkMode?'light':''} name="subject" type='text' placeholder="Subject" required minLength="3" />
+          <input
+            class={props.darkMode ? "light" : ""}
+            name="email"
+            type="email"
+            required
+            placeholder="Email"
+          />
+          <input
+            class={props.darkMode ? "light" : ""}
+            name="subject"
+            type="text"
+            placeholder="Subject"
+            required
+            minLength="3"
+          />
           <textarea
             name="message"
             placeholder="Message"
             required
             minLength="10"
-            
-            class={props.darkMode?'light':''}
+            class={props.darkMode ? "light" : ""}
           />
           {status ? (
             <h1 class={style.status}>{status}</h1>

@@ -5,7 +5,7 @@
   height: 100vh;
   grid-template-columns: 1fr 1fr;
   color: #017a84;
-    transition: 1s
+  transition: 1s;
 }
 .skills > div > h1 > span:hover {
   font-family: "helvetica";
@@ -56,6 +56,7 @@ ol li {
 li p {
   font: 14px/1.5 Helvetica, sans-serif;
   padding-left: 60px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .skills > div:nth-of-type(1) > p > div > ol > li > p > span:hover {
@@ -68,6 +69,14 @@ li p {
 .skills > div:nth-of-type(1) > p > div > ol > li > span {
   position: absolute;
   bottom: -16px;
+}
+
+.skills > div:nth-of-type(2) {
+  display: flex;
+}
+.skills > div:nth-of-type(2) > img {
+  width: 100%;
+  justify-self: flex-end;
 }
 @media only screen and (max-width: 1000px) {
   .skills {
@@ -93,6 +102,9 @@ li p {
 }
 .dark {
   background: black;
-  color: white;
   transition: 1s;
+}
+
+.dark li p {
+  color: rgba(255, 255, 255, 0.7);
 }

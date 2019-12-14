@@ -95,7 +95,7 @@
 @media only screen and (max-width: 1000px) {
   .contactCard {
     width: 90%;
-    padding: 1%;
+    padding: 5%;
   }
   .contactCard > form {
     display: grid;
