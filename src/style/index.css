@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  /* background: #fafafa; */
+  position: absolute;
+  left: 0;
+  font-family: "Helvetica Neue", arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/* background: black */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  html,
+  body {
+    overflow-y: scroll;
+  }
+}

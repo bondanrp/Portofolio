@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap");
+.about {
+  font-family: "poppins";
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  transition: 1s;
+}
+.about > div > h1 {
+  width: 70%;
+  font-size: 60px;
+  margin: 0 auto;
+  transition: 1s linear;
+}
+.about > div > h1 > span {
+  color: #017a84;
+}
+.about > div > p {
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+}
+.about > div:nth-of-type(1) {
+  width: 50vw;
+  overflow-x: hidden;
+  /* background: #000; */
+  overflow-y: hidden;
+}
+.about > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  .about > div:nth-of-type(2) {
+    grid-row: 1;
+  }
+  .about > div:nth-of-type(2) > h1 {
+    padding-top: 80px;
+    font-size: 30px;
+  }
+}
+.about > div > g > svg {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.about > div:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.about > div > img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.dark {
+  background: black;
+  color: white;
+  transition: 1s;
+}

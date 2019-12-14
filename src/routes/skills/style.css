@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap");
+.skills {
+  font-family: "poppins";
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  color: #017a84;
+    transition: 1s
+}
+.skills > div > h1 > span:hover {
+  font-family: "helvetica";
+  font-style: italic;
+  transition: 1s;
+}
+
+.skills > div > h1 {
+  font-size: 70px;
+  width: 70%;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+.skills > div > p {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: justify;
+  width: 70%;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+.skills > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+
+  /* align-content: space-around; */
+  justify-content: center;
+}
+.skills > div:nth-of-type(2) {
+  position: relative;
+}
+.skills > div:nth-of-type(2) > svg {
+  position: absolute;
+  top: 200px;
+}
+
+ol {
+  color: #ccc;
+  list-style-type: none;
+  padding: 0;
+}
+
+ol li {
+  position: relative;
+  font: bold italic 50px/1.5 Helvetica, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+li p {
+  font: 14px/1.5 Helvetica, sans-serif;
+  padding-left: 60px;
+}
+
+.skills > div:nth-of-type(1) > p > div > ol > li > p > span:hover {
+  color: #017a84;
+  transform: scaleX(1.4) !important;
+}
+.skills > div:nth-of-type(1) > p > div > ol > li > p > span {
+  color: #017a84;
+}
+.skills > div:nth-of-type(1) > p > div > ol > li > span {
+  position: absolute;
+  bottom: -16px;
+}
+@media only screen and (max-width: 1000px) {
+  .skills {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  .skills > div:nth-of-type(2) > img {
+    display: none;
+  }
+}
+.icons {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.icons > svg {
+  margin: 7px;
+}
+.icons > svg:hover {
+  color: #017a84;
+}
+.dark {
+  background: black;
+  color: white;
+  transition: 1s;
+}

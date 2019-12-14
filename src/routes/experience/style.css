@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap");
+.experience {
+  font-family: "poppins";
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  transition: 1s
+  /* color: #017a84; */
+}
+
+.experience > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.experience > div:nth-of-type(1) > div > img {
+  width: 100%;
+}
+.experience > div:nth-of-type(1) > div > h3 {
+  font-weight: 400;
+}
+.experience > div:nth-of-type(1) > div {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+
+.card {
+  width: 80%;
+  background: white;
+  height: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.14);
+  overflow-y: scroll;
+  border-radius: 10px
+}
+.card > p {
+  text-align: justify;
+}
+.card > p > a {
+  text-decoration: none;
+  color: #017a84;
+}
+.project {
+  position: relative;
+  overflow: hidden
+}
+.project > a > img {
+  width: 100%;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.14);
+  filter: brightness(1);
+  transition: 0.3s ease-in-out;
+}
+.insideText {
+  position: absolute;
+  top: 0;
+  padding: 0 20px;
+  opacity: 0;
+  transition: 1s;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  text-align: justify;
+}
+.insideText > h1 {
+  font-weight: 900;
+  color: #017a84;
+}
+.project:hover > a > img {
+  filter: brightness(35%);
+  transition: 0.3s ease-in-out;
+}
+.project:hover > a > .insideText {
+  opacity: 1;
+  transition: 1s;
+}
+.experience h1 {
+  text-align: center;
+}
+.card p:last-of-type {
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1000px) {
+  .experience {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 200vh
+  }
+}
+.experience > svg {
+  position: absolute;
+  z-index: -1;
+  right: 200px;
+  width: 1000px;
+  height: 1000px;
+}
+.dark {
+  background: black;
+  color: white;
+  transition: 1s;
+}
+.gray {
+  background: #3c4042
+}
