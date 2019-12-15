@@ -1,6 +1,7 @@
 import { h, Component, createRef } from "preact";
 import baseroute from "../baseroute";
-// import { Router } from "preact-router";
+import { Provider, connect } from "unistore/preact";
+import { store } from "./unistore/store-and-actions";
 
 import Header from "./header";
 
@@ -11,12 +12,11 @@ import Skills from "../routes/skills";
 import Experience from "../routes/experience";
 import Contact from "../routes/contact";
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: null,
-      darkMode: false
+      selected: null
     };
   }
   //refs
@@ -26,11 +26,6 @@ export default class App extends Component {
   experience = createRef();
   contact = createRef();
 
-  setDarkMode = _ => {
-    this.state.darkMode
-      ? this.setState({ darkMode: false })
-      : this.setState({ darkMode: true });
-  };
   changeSelection = index => {
     this.setState({
       selected: index
@@ -59,32 +54,34 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="app">
-        <Header
-          changeSelection={this.changeSelection}
-          setDarkMode={this.setDarkMode}
-          darkMode={this.state.darkMode}
-        />
-        <div ref={this.home}>
-          <Home
-            path={`${baseroute}/`}
+      <Provider store={store}>
+        <div id="app">
+          <Header
             changeSelection={this.changeSelection}
-            darkMode={this.state.darkMode}
+            setDarkMode={this.setDarkMode}
           />
+          <div ref={this.home}>
+            <Home
+              path={`${baseroute}/`}
+              changeSelection={this.changeSelection}
+            />
+          </div>
+          <div ref={this.about}>
+            <About />
+          </div>
+          <div ref={this.skills}>
+            <Skills />
+          </div>
+          <div ref={this.experience}>
+            <Experience />
+          </div>
+          <div ref={this.contact}>
+            <Contact />
+          </div>
         </div>
-        <div ref={this.about}>
-          <About darkMode={this.state.darkMode} />
-        </div>
-        <div ref={this.skills}>
-          <Skills darkMode={this.state.darkMode} />
-        </div>
-        <div ref={this.experience}>
-          <Experience darkMode={this.state.darkMode} />
-        </div>
-        <div ref={this.contact}>
-          <Contact darkMode={this.state.darkMode} />
-        </div>
-      </div>
+      </Provider>
     );
   }
 }
+
+export default App;

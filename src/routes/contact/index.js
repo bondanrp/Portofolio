@@ -1,6 +1,7 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
 import style from "./style";
+import { connect } from "unistore/preact";
 
 const text = "Contact Me!";
 const mapText = input => {
@@ -11,7 +12,7 @@ const mapText = input => {
   return result;
 };
 
-const Contact = props => {
+const Contact = ({ darkMode }) => {
   const [status, setStatus] = useState("");
   const submitForm = ev => {
     ev.preventDefault();
@@ -33,9 +34,7 @@ const Contact = props => {
   };
   return (
     <div
-      class={
-        props.darkMode ? [style.contact, style.dark].join(" ") : style.contact
-      }
+      class={darkMode ? [style.contact, style.dark].join(" ") : style.contact}
     >
       <div>
         <g>
@@ -52,7 +51,7 @@ const Contact = props => {
       <div></div>
       <div
         class={
-          props.darkMode
+          darkMode
             ? [style.contactCard, style.gray].join(" ")
             : style.contactCard
         }
@@ -76,17 +75,17 @@ const Contact = props => {
             minLength="3"
             required
             type="text"
-            class={props.darkMode ? "light" : ""}
+            class={darkMode ? "light" : ""}
           />
           <input
-            class={props.darkMode ? "light" : ""}
+            class={darkMode ? "light" : ""}
             name="email"
             type="email"
             required
             placeholder="Email"
           />
           <input
-            class={props.darkMode ? "light" : ""}
+            class={darkMode ? "light" : ""}
             name="subject"
             type="text"
             placeholder="Subject"
@@ -98,7 +97,7 @@ const Contact = props => {
             placeholder="Message"
             required
             minLength="10"
-            class={props.darkMode ? "light" : ""}
+            class={darkMode ? "light" : ""}
           />
           {status ? (
             <h1 class={style.status}>{status}</h1>
@@ -110,4 +109,4 @@ const Contact = props => {
     </div>
   );
 };
-export default Contact;
+export default connect("darkMode", null)(Contact);

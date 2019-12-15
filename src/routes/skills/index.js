@@ -8,14 +8,11 @@ import {
   faReact
 } from "@fortawesome/free-brands-svg-icons";
 import undraw from "./undraw2.svg";
+import { connect } from "unistore/preact";
 
-const Skills = props => {
+const Skills = ({ darkMode }) => {
   return (
-    <div
-      class={
-        props.darkMode ? [style.skills, style.dark].join(" ") : style.skills
-      }
-    >
+    <div class={darkMode ? [style.skills, style.dark].join(" ") : style.skills}>
       <div>
         <h1>
           <span>S</span>
@@ -71,4 +68,4 @@ const Skills = props => {
     </div>
   );
 };
-export default Skills;
+export default connect("darkMode", null)(Skills);

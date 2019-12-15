@@ -2,14 +2,13 @@ import { h } from "preact";
 import style from "./style";
 import undraw from "./undraw.svg";
 import project1 from "./project1.jpg";
+import { connect } from "unistore/preact";
 
-const Experience = props => {
+const Experience = ({ darkMode }) => {
   return (
     <div
       class={
-        props.darkMode
-          ? [style.experience, style.dark].join(" ")
-          : style.experience
+        darkMode ? [style.experience, style.dark].join(" ") : style.experience
       }
     >
       <div>
@@ -21,9 +20,7 @@ const Experience = props => {
           <h3>I hope you can help me with this</h3>
         </div>
       </div>
-      <div
-        class={props.darkMode ? [style.card, style.gray].join(" ") : style.card}
-      >
+      <div class={darkMode ? [style.card, style.gray].join(" ") : style.card}>
         <h1>No Worries!</h1>
         <p>
           Altough it seems that im missing a work experience in the related
@@ -80,4 +77,4 @@ const Experience = props => {
     </div>
   );
 };
-export default Experience;
+export default connect("darkMode", null)(Experience);

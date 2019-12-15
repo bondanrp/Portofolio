@@ -1,12 +1,11 @@
 import { h } from "preact";
 import style from "./style";
 import foto from "./foto.jpg";
+import { connect } from "unistore/preact";
 
-const About = props => {
+const About = ({ darkMode }) => {
   return (
-    <div
-      class={props.darkMode ? [style.about, style.dark].join(" ") : style.about}
-    >
+    <div class={darkMode ? [style.about, style.dark].join(" ") : style.about}>
       <div>
         <img src={foto} />
         <g>
@@ -44,4 +43,4 @@ const About = props => {
     </div>
   );
 };
-export default About;
+export default connect("darkMode", null)(About);

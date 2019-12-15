@@ -1,8 +1,7 @@
 import { h } from "preact";
 import style from "./style";
-import About from "../about";
 import undraw from "./illu2.svg";
-import { useEffect } from "preact/hooks";
+import { connect } from "unistore/preact";
 
 const text = "Hi there!";
 const text2 = "I'm  ";
@@ -14,11 +13,9 @@ const mapText = input => {
   return result;
 };
 
-const Home = props => {
+const Home = ({ darkMode }) => {
   return (
-    <div
-      class={props.darkMode ? [style.home, style.dark].join(" ") : style.home}
-    >
+    <div class={darkMode ? [style.home, style.dark].join(" ") : style.home}>
       <div>
         <h1>
           {mapText(text)}
@@ -66,4 +63,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+export default connect("darkMode", null)(Home);
