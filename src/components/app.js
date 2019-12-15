@@ -1,4 +1,5 @@
 import { h, Component, createRef } from "preact";
+import baseroute from "../baseroute";
 // import { Router } from "preact-router";
 
 import Header from "./header";
@@ -66,6 +67,7 @@ export default class App extends Component {
         />
         <div ref={this.home}>
           <Home
+            path={`${baseroute}/`}
             changeSelection={this.changeSelection}
             darkMode={this.state.darkMode}
           />
