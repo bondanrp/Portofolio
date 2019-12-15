@@ -29,10 +29,10 @@ class Header extends Component {
       <header
         class={
           darkMode
-            ? sidebar
+            ? this.state.sidebar
               ? [style.header, style.dark].join(" ")
               : [style.hidden, style.dark].join(" ")
-            : sidebar
+            : this.state.sidebar
             ? style.header
             : style.hidden
         }
@@ -40,7 +40,7 @@ class Header extends Component {
         <button
           class={darkMode ? style.dark : null}
           onClick={() => {
-            sidebar ? this.setSidebar(false) : this.setSidebar(true);
+            this.state.sidebar ? this.setSidebar(false) : this.setSidebar(true);
           }}
         >
           <h1>B R P</h1>
