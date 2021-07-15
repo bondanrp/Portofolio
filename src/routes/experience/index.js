@@ -63,7 +63,7 @@ design by creating modular components to optimize front-end development workflow
             </div>
           </a>
         </div> */}
-        <h1>Other Experience</h1>
+        <h1>Other Experiences</h1>
         <p>
           I also have other experience unrelated to web development that helps me
           to be who I am today, you may visit my{" "}
