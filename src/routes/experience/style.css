@@ -74,7 +74,8 @@
   transition: 1s;
 }
 .experience h1 {
-  text-align: center;
+  text-align: left;
+  color: #017a84
 }
 .card p:last-of-type {
   margin-bottom: 40px;
@@ -119,4 +120,18 @@
 }
 .project:hover > a > .overlay {
   display: block;
+}
+.paprika{
+  background-color: #f04f57;
+  object-fit: contain;
+  height: 75px;
+  width: 200px;
+  padding: 10px 20px;
+}
+.sribu{
+  background-color: #1688d1;
+  object-fit: contain;
+  height: 75px;
+  width: 200px;
+  padding: 10px 20px;
 }

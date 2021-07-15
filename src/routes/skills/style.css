@@ -49,12 +49,12 @@ ol {
 
 ol li {
   position: relative;
-  font: bold italic 50px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold italic 50px/1.5 "poppins";
   margin-bottom: 20px;
 }
 
 li p {
-  font: 14px/1.5 Helvetica, sans-serif;
+  font: 18px/1.5 "poppins";
   padding-left: 60px;
   color: rgba(0, 0, 0, 0.6);
 }

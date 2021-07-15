@@ -49,12 +49,6 @@ class Header extends Component {
         <div>
           <button
             for="home"
-            onMouseOver={() => {
-              this.setNavIcon(1);
-            }}
-            onMouseOut={() => {
-              this.setNavIcon(0);
-            }}
             onClick={() => {
               this.props.changeSelection(0);
               this.setSidebar(true);
@@ -69,12 +63,6 @@ class Header extends Component {
 
           <button
             for="about"
-            onMouseOver={() => {
-              this.setNavIcon(2);
-            }}
-            onMouseOut={() => {
-              this.setNavIcon(0);
-            }}
             onClick={() => {
               this.props.changeSelection(1);
               this.setSidebar(true);
@@ -89,12 +77,6 @@ class Header extends Component {
 
           <button
             for="skills"
-            onMouseOver={() => {
-              this.setNavIcon(3);
-            }}
-            onMouseOut={() => {
-              this.setNavIcon(0);
-            }}
             onClick={() => {
               this.props.changeSelection(2);
               this.setSidebar(true);
@@ -109,12 +91,6 @@ class Header extends Component {
 
           <button
             for="experience"
-            onMouseOver={() => {
-              this.setNavIcon(4);
-            }}
-            onMouseOut={() => {
-              this.setNavIcon(0);
-            }}
             onClick={() => {
               this.props.changeSelection(3);
               this.setSidebar(true);
@@ -129,12 +105,6 @@ class Header extends Component {
 
           <button
             for="contact"
-            onMouseOver={() => {
-              this.setNavIcon(5);
-            }}
-            onMouseOut={() => {
-              this.setNavIcon(0);
-            }}
             onClick={() => {
               this.props.changeSelection(4);
               this.setSidebar(true);

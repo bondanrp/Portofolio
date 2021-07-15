@@ -27,7 +27,7 @@ const Home = ({ darkMode }) => {
             <span> A Developer</span>
           </div>
         </h1>
-        <h4>Full-Stack Web Developer</h4> // <h4>Mobile Developer</h4> //{" "}
+        <h4>Front-End Web Developer</h4>//{" "}
         <h4>Javascript Enthusiast</h4>
       </div>
       <div>

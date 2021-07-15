@@ -38,9 +38,8 @@ const Skills = ({ darkMode }) => {
               <li>
                 <span>2.</span>
                 <p>
-                  I also have an experience in full-stack web development using{" "}
-                  <span>Express JS</span>, <span>Node JS</span>,{" "}
-                  <span>MySQL</span> and <span>NoSQL</span> databases for the
+                  I also have an experience in integrating{" "}
+                  <span>GraphQL</span> <span>Firebase</span>, and <span>MySQL</span> databases for the
                   back-end.
                 </p>
               </li>

@@ -3,6 +3,8 @@ import style from "./style";
 import undraw from "./undraw.svg";
 import project1 from "./project1.jpg";
 import { connect } from "unistore/preact";
+import paprika from './paprika.png'
+import sribu from './sribu.png'
 
 const Experience = ({ darkMode }) => {
   return (
@@ -16,22 +18,30 @@ const Experience = ({ darkMode }) => {
           <img src={undraw} alt="404" />
         </div>
         <div>
-          <h1>Uh Oh, Work Experience Not Found!</h1>
-          <h3>I hope you can help me with this</h3>
+          <h1>Hi! This is my work experiences.</h1>
         </div>
       </div>
       <div class={darkMode ? [style.card, style.gray].join(" ") : style.card}>
-        <h1>No Worries!</h1>
+        <h1>Paprika</h1>
+        <h4>(Sep 2020 - Current)</h4>
         <p>
-          Altough it seems that im missing a work experience in the related
-          field, I have completed my education on web and mobile development
-          from{" "}
-          <a href="https://www.purwadhika.com/">
-            Purwadhika Startup and Coding School
-          </a>
-          .
+        Sole Front End Developer for Paprika. Tasked with developing and maintaining the main Paprika website and the
+dashboard for both Paprika admins and outlets using React as the framework.
         </p>
-        <h1>My Project</h1>
+        <a href={`http://www.paprika.co.id`}>
+        <img class={style.paprika} src={paprika}/>
+        </a>
+        <h1>Sribu</h1>
+        <h4>(Mar 2019 - Jul 2019 )</h4>
+        <p>
+        Tasked to recreate and develop the main Sribulancer website by using a more recent framework, Preact JS, to improve
+overall stability and performance. Integrated the back-end GraphQL to front-end architecture. Implemented atomic
+design by creating modular components to optimize front-end development workflow.
+        </p>
+        <a href={`http://www.sribulancer.com`}>
+        <img class={style.sribu} src={sribu}/>
+        </a>
+        {/* <h1>My Project</h1>
 
         <div class={style.insideText}>
           <h1>BagiBakat</h1>
@@ -52,11 +62,11 @@ const Experience = ({ darkMode }) => {
               <h1>View on GitHub</h1>
             </div>
           </a>
-        </div>
+        </div> */}
         <h1>Other Experience</h1>
         <p>
-          I also have other experience unrelated to web development that lead me
-          to became who I am today, you may visit my{" "}
+          I also have other experience unrelated to web development that helps me
+          to be who I am today, you may visit my{" "}
           <a href="https://www.linkedin.com/in/bondanrp/">LinkedIn</a> to check
           out more.
         </p>
