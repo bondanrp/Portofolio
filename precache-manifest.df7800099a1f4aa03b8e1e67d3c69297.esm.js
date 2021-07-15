@@ -3,6 +3,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portofolio/10e70fa41959cd58fa5bf606244f5400.jpg"
   },
   {
+    "url": "/Portofolio/830c5fa9401e14150f00bb3b94e2b2de.png"
+  },
+  {
     "revision": "59e221032ab061cad83b6ce2bcddbde8",
     "url": "/Portofolio/assets/icons/android-chrome-192x192.png"
   },
@@ -30,71 +33,62 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portofolio/b441f51a3d70069990974ed690ef82fa.jpg"
   },
   {
-    "revision": "b3ead062ab3be1939b25",
-    "url": "/Portofolio/bundle.b3ead.js"
+    "revision": "7132448dead4abde8cdcb0bbc3df4832",
+    "url": "/Portofolio/bundle.5bf96.esm.js"
   },
   {
-    "revision": "b3ead062ab3be1939b25",
+    "revision": "f86555342d3d1f048ec3",
     "url": "/Portofolio/bundle.dad2b.css"
   },
   {
-    "revision": "de81eff59c50d9cd425808575cecfdaf",
+    "url": "/Portofolio/f7018e5b4f56916c184518a91a2f069f.png"
+  },
+  {
+    "revision": "95b75a128af02a19d88b16e3d7658d7b",
     "url": "/Portofolio/index.html"
   },
   {
-    "revision": "7daf8f185335e8cfc202",
-    "url": "/Portofolio/polyfills.7daf8.js"
+    "revision": "218e280867a5c2e4d51b7a0643728382",
+    "url": "/Portofolio/polyfills.cb0a6.esm.js"
   },
   {
     "revision": "5b4fe4bb913085ae14f8",
     "url": "/Portofolio/route-about.chunk.59aa1.css"
   },
   {
-    "revision": "5b4fe4bb913085ae14f8",
-    "url": "/Portofolio/route-about.chunk.5b4fe.js"
+    "revision": "38a3053efc4dd69503bd73f23281190a",
+    "url": "/Portofolio/route-about.chunk.fba4a.esm.js"
   },
   {
-    "revision": "2e879fce5964df52783d",
-    "url": "/Portofolio/route-contact.chunk.2e879.js"
+    "revision": "a7abcf1e2aa6317a1c55bebeb26da9cc",
+    "url": "/Portofolio/route-contact.chunk.21ba4.esm.js"
   },
   {
     "revision": "2e879fce5964df52783d",
     "url": "/Portofolio/route-contact.chunk.38d71.css"
   },
   {
-    "revision": "dff8c7ea8fcbe1484b99",
-    "url": "/Portofolio/route-experience.chunk.d7648.css"
+    "revision": "f5864d4b9bdc0a5102c181de7e123bb0",
+    "url": "/Portofolio/route-experience.chunk.303cc.esm.js"
   },
   {
-    "revision": "dff8c7ea8fcbe1484b99",
-    "url": "/Portofolio/route-experience.chunk.dff8c.js"
+    "revision": "02060fb9ca1a6695c929",
+    "url": "/Portofolio/route-experience.chunk.65f19.css"
   },
   {
-    "revision": "5b0f6730f721a1c59e13",
+    "revision": "b726321fd1814eb0b28a",
     "url": "/Portofolio/route-home.chunk.3fe44.css"
   },
   {
-    "revision": "5b0f6730f721a1c59e13",
-    "url": "/Portofolio/route-home.chunk.5b0f6.js"
+    "revision": "a146c4d2c6f70dfccf073b1d86f02c67",
+    "url": "/Portofolio/route-home.chunk.d6c3f.esm.js"
   },
   {
-    "revision": "d33d85dc254fbcfc8b2b",
-    "url": "/Portofolio/route-skills.chunk.cc7fe.css"
+    "revision": "45f48d35b9f6d2ebd8a8",
+    "url": "/Portofolio/route-skills.chunk.51e39.css"
   },
   {
-    "revision": "d33d85dc254fbcfc8b2b",
-    "url": "/Portofolio/route-skills.chunk.d33d8.js"
-  },
-  {
-    "revision": "13b82ed03d648451c57be206f75f0216",
-    "url": "/Portofolio/sw-debug.js"
-  },
-  {
-    "revision": "eabd656c529924bcaa27c1bfdebeaa06",
-    "url": "/Portofolio/sw-esm.js"
-  },
-  {
-    "revision": "acd3ba39c93358ea156cb27218a0c2c4",
-    "url": "/Portofolio/sw.js"
+    "revision": "de2b51081ef78628701bb3f473e06b19",
+    "url": "/Portofolio/route-skills.chunk.fecc7.esm.js"
   }
 ]);

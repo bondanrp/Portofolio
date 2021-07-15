@@ -755,12 +755,12 @@ ol {
 
 ol li {
   position: relative;
-  font: bold italic 50px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold italic 50px/1.5 "poppins";
   margin-bottom: 20px;
 }
 
 li p {
-  font: 14px/1.5 Helvetica, sans-serif;
+  font: 18px/1.5 "poppins";
   padding-left: 60px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -915,7 +915,8 @@ li p {
   transition: 1s;
 }
 .experience__1ddyu h1 {
-  text-align: center;
+  text-align: left;
+  color: #017a84
 }
 .card__2Pz08 p:last-of-type {
   margin-bottom: 40px;
@@ -963,7 +964,22 @@ li p {
 .project__128ev:hover > a > .overlay__3Aoxp {
   display: block;
 }
-
+.paprika__3q1wh{
+  background-color: #f04f57;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 75px;
+  width: 200px;
+  padding: 10px 20px;
+}
+.sribu__15eg7{
+  background-color: #1688d1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 75px;
+  width: 200px;
+  padding: 10px 20px;
+}
 .contact__3AJPG {
   font-family: "poppins";
   display: grid;
@@ -1103,4 +1119,4 @@ li p {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.054a4.css.map*/
+/*# sourceMappingURL=ssr-bundle.9298e.css.map*/
